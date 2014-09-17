@@ -1,0 +1,8 @@
+<div class="jumbotron text-center">
+  <h1>Do you hate JS?</h1><br />
+  <%= form_for @answer, layout: :basic do |f| %>
+    <%= f.radio_button :yes_or_no, true, label: 'Yes, I hate Javascript' %>
+    <%= f.radio_button :yes_or_no, false, label: 'No, I love Javascript' %>
+    <%= f.submit 'Answer' %>
+  <% end %>
+</div>
